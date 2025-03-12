@@ -8,7 +8,7 @@
  - PORT = 3000
  - Inside the "src/config" folder create a new file "config.json" adn then add the following piece of of json
 
----
+'''
 
 {
   "development": {
@@ -34,6 +34,8 @@
   }
 }
 
+'''
+
 - Once you are done with the above changes you go to src file and open the terminal and execute the command "npx sequelize db:create"
 
 
@@ -43,4 +45,3 @@
 
 
 
----
