@@ -34,6 +34,9 @@
   }
 }
 
+- Once you are done with the above changes you go to src file and open the terminal and execute the command "npx sequelize db:create"
+
+
 
 
 
