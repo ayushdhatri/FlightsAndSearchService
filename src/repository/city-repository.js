@@ -14,7 +14,7 @@ class CityRepository {
         }
     }
     // function to delete a tuble city from db
-    async deleteCity({ cityId }) {
+    async deleteCity( cityId ) {
         try {
             await City.destroy({
                 where : {
@@ -29,7 +29,7 @@ class CityRepository {
         }
     }
     // function to update the city
-    async updateCity({cityId}){
+    async updateCity(cityId , data){
         try {
             const city = await City.update(data, {
                 where : {
@@ -44,7 +44,7 @@ class CityRepository {
     }
 
     // function to getCity
-    async getCity({cityId}){
+    async getCity(cityId){
         try {
             const city = await City.findByPk(cityId);
             return city;
